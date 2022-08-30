@@ -29,7 +29,7 @@ public class OperandTest {
     number8++;
     System.out.println(number8);//2
 
-    //実質number8 + 5がおこなわれた後に number + 1がおこなわれている  
+    //実質number8 + 5がおこなわれた後に number + 1がおこなわれている
     System.out.println(number8++ + 5);//こっちは時間差が起きてnumber8に5を足し終わった後のnumber8に++がつくので
     System.out.println(number8);//ここの状態の時に1足される状況になってしまう
 

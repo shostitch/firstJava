@@ -1,4 +1,4 @@
-public class ArrayTest {
+public class ArrayTest2 {
   public static void main(String[] args) {
     String name = "鈴木太郎";
     String email = "suzuki_taro@xxxx.com";
@@ -12,13 +12,25 @@ public class ArrayTest {
     String[] customer; // String型の配列を宣言
     // customer[0] = "鈴木太郎"; //配列の初期化ができていない！
     customer = new String[3];
-    customer[0] = "鈴木太郎";// 0のことを添字、indexという！その値が入る箱を要素という！
-    customer[1] = "suzuki_taro@xxxx.com";
-    customer[2] = "090-0000-9999";
+    int a = 3;
 
-    System.out.println(customer[0]);
-    System.out.println(customer[1]);
-    System.out.println(customer[2]);
+    switch(a){
+      case 1:
+        customer[0] = "鈴木太郎";// 0のことを添字、indexという！その値が入る箱を要素という！
+        customer[1] = "suzuki_taro@xxxx.com";
+        customer[2] = "090-0000-9999";
+      case 2:
+        customer[0] = "鈴木太郎";// 0のことを添字、indexという！その値が入る箱を要素という！
+        customer[1] = "suzuki_taro@xxxx.com";
+      case 3:
+        customer[0] = "鈴木太郎";// 0のことを添字、indexという！その値が入る箱を要素という！
+    }
+    for(int i = 0; i < customer.length; i ++){
+      if(customer[i] != null){
+        System.out.println(customer[i]);
+      }
+      
+    }
 
     System.out.println();
 

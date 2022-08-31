@@ -12,7 +12,7 @@ public class ArrayTest2 {
     String[] customer; // String型の配列を宣言
     // customer[0] = "鈴木太郎"; //配列の初期化ができていない！
     customer = new String[3];
-    int a = 3;
+    int a = 2;
 
     switch(a){
       case 1:
@@ -46,10 +46,30 @@ public class ArrayTest2 {
 
     System.out.println();
 
-    String[] customer3 = {"鈴木太郎","suzuki_taro@xxxx.com","090-0000-9999"};
-    for(int i = 0; i < customer.length; i ++){
-      System.out.println(customer3[i]);
+    // String[] customer3 = {"鈴木太郎","suzuki_taro@xxxx.com","090-0000-9999"};
+    String[] customer3;
+
+    switch (a){ //switch文の時はbreakを必ずつけること！！！
+      // 条件も勝手に制限してしまうため後からタスことができない
+      case 1:
+        customer3 = new String[] {"鈴木太郎","suzuki_taro@xxxx.com","090-0000-9999"};
+        break;
+      case 2:
+        customer3 = new String[] {"鈴木太郎","suzuki_taro@xxxx.com"};
+        break;
+      default:
+        customer3 = new String[] {"鈴木太郎"};
+        break;
     }
+
+    for(String info : customer3){
+      System.out.println(info);
+    }
+
+
+    // for(int i = 0; i < customer.length; i ++){
+    //   System.out.println(customer3[i]);
+    // }
 
     System.out.println();
 

@@ -1,7 +1,7 @@
 public class ArrayTest {
   public static void main(String[] args) {
     String name = "鈴木太郎";
-    String email = "suzuki_taro@xxxx.ccom";
+    String email = "suzuki_taro@xxxx.com";
     String phone = "090-0000-9999";
     System.out.println(name);
     System.out.println(email);
@@ -9,15 +9,34 @@ public class ArrayTest {
 
     System.out.println();
 
-    String[] customer; //String型の配列を宣言
-    //customer[0] = "鈴木太郎"; //配列の初期化ができていない！
+    String[] customer; // String型の配列を宣言
+    // customer[0] = "鈴木太郎"; //配列の初期化ができていない！
     customer = new String[3];
-    customer[0] = "鈴木太郎";//0のことを添字、indexという！その値が入る箱を要素という！
-    customer[1] = "suzuki_taro@xxxx.ccom";
+    customer[0] = "鈴木太郎";// 0のことを添字、indexという！その値が入る箱を要素という！
+    customer[1] = "suzuki_taro@xxxx.com";
     customer[2] = "090-0000-9999";
 
     System.out.println(customer[0]);
     System.out.println(customer[1]);
     System.out.println(customer[2]);
+
+    System.out.println();
+
+    //String[] customer2;
+    //customer2 = {"鈴木太郎","suzuki_taro@xxxx.com","090-0000-9999"};
+    //{}で初期化する場合、宣言と初期化を分けられない
+
+    String[] customer2 = {"鈴木太郎","suzuki_taro@xxxx.com","090-0000-9999"};
+//  new 型名[]で初期化する場合、宣言と初期化を同時に行う
+    System.out.println(customer2[0]);
+    System.out.println(customer2[1]);
+    System.out.println(customer2[2]);
+
+    System.out.println();
+
+    String[] customer3 = {"鈴木太郎","suzuki_taro@xxxx.com","090-0000-9999"};
+    for(int i = 0; i < customer.length; i ++){
+      System.out.println(customer3[i]);
+    }
   }
 }
